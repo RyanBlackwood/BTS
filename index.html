@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blackwood Tech Services offers PC cleaning, diagnostics, upgrades, custom gaming computers, networking, and setup services with transparent pricing." />
+  <title>Blackwood Tech Services | PC Cleaning, Diagnostics & Custom Gaming PCs</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-bg">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="orb orb-c"></div>
+    <canvas id="particles"></canvas>
+  </div>
+
+  <header class="header" id="header">
+    <a href="#" class="brand" aria-label="Blackwood Tech Services home">
+      <span class="brand-mark">BTS</span>
+      <span>
+        <strong>Blackwood</strong>
+        <small>Tech Services</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#custom-pcs">Custom PCs</a>
+      <a href="#process">Process</a>
+      <a href="#contact" class="nav-cta">Book Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Modern PC services • Transparent pricing • Built local</p>
+        <h1>PC cleanup, diagnostics, and custom gaming computers without the confusion.</h1>
+        <p class="hero-text">
+          Blackwood Tech Services helps gamers, students, creators, and families keep their computers clean,
+          fast, reliable, and upgrade-ready.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#pricing" class="btn btn-primary">View Pricing</a>
+          <a href="#custom-pcs" class="btn btn-secondary">Build a Gaming PC</a>
+        </div>
+
+        <div class="trust-row" aria-label="Service highlights">
+          <span>Starting at $20</span>
+          <span>Clear diagnostics</span>
+          <span>No pressure upsells</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="pc-card">
+          <div class="pc-glow"></div>
+          <div class="pc-tower">
+            <div class="tower-top"></div>
+            <div class="fan fan-one"></div>
+            <div class="fan fan-two"></div>
+            <div class="gpu"></div>
+            <div class="ram"></div>
+            <div class="cable cable-one"></div>
+            <div class="cable cable-two"></div>
+          </div>
+          <div class="status-panel">
+            <div>
+              <small>Thermals</small>
+              <strong>Optimized</strong>
+            </div>
+            <div>
+              <small>Dust Level</small>
+              <strong>Cleared</strong>
+            </div>
+            <div>
+              <small>Build Type</small>
+              <strong>Gaming Ready</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-find section reveal" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">Find your service fast</p>
+        <h2>What do you need help with?</h2>
+        <p>Simple categories, clear pricing, and service details that make sense.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card featured">
+          <div class="card-icon">🧼</div>
+          <h3>PC Cleaning</h3>
+          <p>Dust removal, fan cleaning, airflow checks, and basic temperature review.</p>
+          <strong>From $20</strong>
+          <a href="#pricing">See cleaning options</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-icon">🩺</div>
+          <h3>Diagnostics</h3>
+          <p>Overheating, crashes, slow PCs, blue screens, drive health, and performance issues.</p>
+          <strong>From $40</strong>
+          <a href="#pricing">View diagnostics</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-icon">🎮</div>
+          <h3>Custom Gaming PCs</h3>
+          <p>Budget, mid-range, and premium gaming computers built around your games and goals.</p>
+          <strong>Quote-based</strong>
+          <a href="#custom-pcs">Start a build</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-icon">⚡</div>
+          <h3>Upgrades</h3>
+          <p>SSD, RAM, GPU, fans, cooling, power supplies, Windows installs, and tune-ups.</p>
+          <strong>From $15 labor</strong>
+          <a href="#pricing">View upgrades</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-icon">🛡️</div>
+          <h3>Software Cleanup</h3>
+          <p>Startup optimization, malware cleanup, Windows refreshes, and driver cleanup.</p>
+          <strong>From $60</strong>
+          <a href="#pricing">View software services</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-icon">📶</div>
+          <h3>Home Tech & Networking</h3>
+          <p>Wi‑Fi help, gaming network optimization, smart device setup, and home tech support.</p>
+          <strong>Custom pricing</strong>
+          <a href="#contact">Request help</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing section reveal" id="pricing">
+      <div class="section-heading">
+        <p class="eyebrow">Transparent starting prices</p>
+        <h2>Pricing that is easy to understand.</h2>
+        <p>Final pricing can vary depending on parts, severity, travel, and scope. You approve work before anything major is done.</p>
+      </div>
+
+      <div class="pricing-tabs" role="tablist" aria-label="Pricing categories">
+        <button class="tab active" data-tab="cleaning">Cleaning</button>
+        <button class="tab" data-tab="diagnostics">Diagnostics</button>
+        <button class="tab" data-tab="upgrades">Upgrades</button>
+        <button class="tab" data-tab="software">Software</button>
+      </div>
+
+      <div class="pricing-panels">
+        <div class="price-panel active" id="cleaning">
+          <article class="price-card">
+            <span class="tag">Entry service</span>
+            <h3>Basic PC Cleaning</h3>
+            <div class="price">$20</div>
+            <ul>
+              <li>Exterior wipe-down</li>
+              <li>Dust blowout</li>
+              <li>Fan and filter cleaning</li>
+              <li>Basic airflow check</li>
+            </ul>
+          </article>
+
+          <article class="price-card premium">
+            <span class="tag">Most popular</span>
+            <h3>Deep Clean + Thermal Check</h3>
+            <div class="price">$60</div>
+            <ul>
+              <li>Detailed internal cleaning</li>
+              <li>GPU and CPU cooler dust removal</li>
+              <li>Cable and airflow review</li>
+              <li>Temperature check before/after</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <span class="tag">Performance refresh</span>
+            <h3>Premium Refresh</h3>
+            <div class="price">$100+</div>
+            <ul>
+              <li>Deep clean included</li>
+              <li>CPU thermal paste replacement</li>
+              <li>Fan curve review</li>
+              <li>Health report and recommendations</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="price-panel" id="diagnostics">
+          <article class="price-card premium">
+            <span class="tag">Core service</span>
+            <h3>Standard Diagnostic</h3>
+            <div class="price">$40</div>
+            <ul>
+              <li>Hardware health check</li>
+              <li>Temperature and performance review</li>
+              <li>Drive health check</li>
+              <li>Clear repair recommendations</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <span class="tag">Gaming-focused</span>
+            <h3>Performance Diagnostic</h3>
+            <div class="price">$60+</div>
+            <ul>
+              <li>FPS/performance review</li>
+              <li>Thermal throttling check</li>
+              <li>Driver and startup review</li>
+              <li>Upgrade path recommendation</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <span class="tag">Problem solving</span>
+            <h3>Crash / Blue Screen Review</h3>
+            <div class="price">$60+</div>
+            <ul>
+              <li>Error review</li>
+              <li>Stability testing</li>
+              <li>RAM and drive checks</li>
+              <li>Repair plan before major work</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="price-panel" id="upgrades">
+          <article class="price-card">
+            <span class="tag">Fast install</span>
+            <h3>RAM Install</h3>
+            <div class="price">$15+</div>
+            <ul>
+              <li>Memory install</li>
+              <li>BIOS recognition check</li>
+              <li>Basic stability check</li>
+            </ul>
+          </article>
+
+          <article class="price-card premium">
+            <span class="tag">Best value</span>
+            <h3>SSD Install</h3>
+            <div class="price">$25+</div>
+            <ul>
+              <li>Drive install</li>
+              <li>Health verification</li>
+              <li>Windows migration or reinstall quoted separately</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <span class="tag">Gaming upgrade</span>
+            <h3>GPU Install</h3>
+            <div class="price">$30+</div>
+            <ul>
+              <li>Graphics card install</li>
+              <li>Driver cleanup/install</li>
+              <li>Power and fitment check</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="price-panel" id="software">
+          <article class="price-card">
+            <span class="tag">Cleanup</span>
+            <h3>Malware / Virus Cleanup</h3>
+            <div class="price">$60+</div>
+            <ul>
+              <li>Malware scan</li>
+              <li>Startup cleanup</li>
+              <li>Browser cleanup</li>
+              <li>Security recommendations</li>
+            </ul>
+          </article>
+
+          <article class="price-card premium">
+            <span class="tag">Fresh start</span>
+            <h3>Windows Reinstall</h3>
+            <div class="price">$80+</div>
+            <ul>
+              <li>Clean Windows install</li>
+              <li>Core drivers installed</li>
+              <li>Basic updates</li>
+              <li>Data backup quoted separately</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <span class="tag">Protection</span>
+            <h3>Data Backup</h3>
+            <div class="price">$40+</div>
+            <ul>
+              <li>Personal file backup</li>
+              <li>External drive or cloud options</li>
+              <li>Before reinstall or repair</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="custom-pcs section reveal" id="custom-pcs">
+      <div class="build-content">
+        <div>
+          <p class="eyebrow">Custom gaming computers</p>
+          <h2>Built around your games, budget, and upgrade path.</h2>
+          <p>
+            BTS custom builds focus on smart part selection, clean cable management, strong airflow,
+            quiet operation, and honest performance expectations.
+          </p>
+
+          <div class="build-tiers">
+            <div>
+              <strong>Starter Gaming</strong>
+              <span>$700–$1,000 typical budget</span>
+            </div>
+            <div>
+              <strong>1440p Performance</strong>
+              <span>$1,100–$1,900 typical budget</span>
+            </div>
+            <div>
+              <strong>Showcase Builds</strong>
+              <span>$2,000+ enthusiast systems</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="quote-card" id="quoteForm">
+          <h3>Quick Build Quote</h3>
+
+          <label>
+            Your budget
+            <select name="budget">
+              <option>$700–$1,000</option>
+              <option>$1,000–$1,500</option>
+              <option>$1,500–$2,500</option>
+              <option>$2,500+</option>
+            </select>
+          </label>
+
+          <label>
+            Main use
+            <select name="use">
+              <option>Gaming</option>
+              <option>Gaming + streaming</option>
+              <option>Gaming + school/work</option>
+              <option>Editing / creative work</option>
+            </select>
+          </label>
+
+          <label>
+            Target
+            <select name="target">
+              <option>1080p high FPS</option>
+              <option>1440p balanced</option>
+              <option>4K / ultra settings</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+
+          <label>
+            Style
+            <select name="style">
+              <option>Clean black build</option>
+              <option>RGB gaming build</option>
+              <option>White showcase build</option>
+              <option>No preference</option>
+            </select>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Generate Quote Summary</button>
+          <p class="form-note" id="quoteOutput">Choose your options and generate a quick summary.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="process section reveal" id="process">
+      <div class="section-heading">
+        <p class="eyebrow">Simple process</p>
+        <h2>No confusing repair-shop experience.</h2>
+      </div>
+
+      <div class="steps">
+        <article>
+          <span>01</span>
+          <h3>Choose a service</h3>
+          <p>Pick cleaning, diagnostics, upgrades, custom builds, or home tech help.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Approve the plan</h3>
+          <p>You get clear recommendations before major repair work or parts purchases.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Get proof</h3>
+          <p>Photos, temperatures, notes, and simple explanations of what was done.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section reveal" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">Ready to book?</p>
+          <h2>Start with a cleaning, diagnostic, or custom PC quote.</h2>
+          <p>
+            Replace the placeholders below with your real booking link, phone number, and business email
+            before publishing.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:contact@blackwoodtechservices.com?subject=BTS Service Request">Email BTS</a>
+          <a class="btn btn-secondary" href="tel:+17633531960">Call / Text</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>Blackwood Tech Services</strong>
+      <p>PC cleaning • Diagnostics • Custom gaming computers • Upgrades • Home tech</p>
+    </div>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
