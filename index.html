@@ -3,445 +3,328 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Blackwood Tech Services offers PC cleaning, diagnostics, upgrades, custom gaming computers, networking, and setup services with transparent pricing." />
-  <title>Blackwood Tech Services | PC Cleaning, Diagnostics & Custom Gaming PCs</title>
-
+  <meta name="description" content="Blackwood Tech Services provides professional computer repair, home technology support, business IT support, senior tech assistance, Wi‑Fi, networking, device setup, and subscription care plans in Bloomington and the Twin Cities." />
+  <title>Blackwood Tech Services | Local IT, Repair & Technology Support</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="site-bg">
-    <div class="orb orb-a"></div>
-    <div class="orb orb-b"></div>
-    <div class="orb orb-c"></div>
-    <canvas id="particles"></canvas>
-  </div>
+  <div class="site-glow site-glow-one"></div>
+  <div class="site-glow site-glow-two"></div>
 
-  <header class="header" id="header">
-    <a href="#" class="brand" aria-label="Blackwood Tech Services home">
-      <span class="brand-mark">BTS</span>
-      <span>
-        <strong>Blackwood</strong>
-        <small>Tech Services</small>
-      </span>
-    </a>
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#top" aria-label="Blackwood Tech Services home">
+        <span class="brand-mark">BTS</span>
+        <span class="brand-text">
+          <strong>Blackwood</strong>
+          <small>Tech Services</small>
+        </span>
+      </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-    <nav class="nav" id="nav">
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#custom-pcs">Custom PCs</a>
-      <a href="#process">Process</a>
-      <a href="#contact" class="nav-cta">Book Now</a>
+      <div class="nav-links" data-nav-links>
+        <a href="#services">Services</a>
+        <a href="#plans">Care Plans</a>
+        <a href="#senior">Senior Communities</a>
+        <a href="#business">Business IT</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="nav-cta">Book Support</a>
+      </div>
     </nav>
   </header>
 
   <main>
     <section class="hero section">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Modern PC services • Transparent pricing • Built local</p>
-        <h1>PC cleanup, diagnostics, and custom gaming computers without the confusion.</h1>
-        <p class="hero-text">
-          Blackwood Tech Services helps gamers, students, creators, and families keep their computers clean,
-          fast, reliable, and upgrade-ready.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#pricing" class="btn btn-primary">View Pricing</a>
-          <a href="#custom-pcs" class="btn btn-secondary">Build a Gaming PC</a>
-        </div>
-
-        <div class="trust-row" aria-label="Service highlights">
-          <span>Starting at $20</span>
-          <span>Clear diagnostics</span>
-          <span>No pressure upsells</span>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal">
-        <div class="pc-card">
-          <div class="pc-glow"></div>
-          <div class="pc-tower">
-            <div class="tower-top"></div>
-            <div class="fan fan-one"></div>
-            <div class="fan fan-two"></div>
-            <div class="gpu"></div>
-            <div class="ram"></div>
-            <div class="cable cable-one"></div>
-            <div class="cable cable-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Bloomington & Twin Cities Technology Support</div>
+          <h1>Modern local IT support without the corporate headache.</h1>
+          <p class="hero-lede">Blackwood Tech Services helps homes, seniors, and small businesses stay connected with reliable computer repair, Wi‑Fi, device setup, networking, subscriptions, and ongoing support.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Schedule Support</a>
+            <a href="#plans" class="btn btn-secondary">View Care Plans</a>
           </div>
-          <div class="status-panel">
+          <div class="trust-row" aria-label="Service highlights">
+            <span>Local</span>
+            <span>Friendly</span>
+            <span>Professional</span>
+            <span>Recurring Support</span>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal delay-1" aria-label="BTS service dashboard preview">
+          <div class="panel-top">
+            <span></span><span></span><span></span>
+            <strong>Technology Health Overview</strong>
+          </div>
+          <div class="status-card good">
             <div>
-              <small>Thermals</small>
+              <small>Wi‑Fi & Network</small>
               <strong>Optimized</strong>
             </div>
+            <span>98%</span>
+          </div>
+          <div class="status-card">
             <div>
-              <small>Dust Level</small>
-              <strong>Cleared</strong>
+              <small>Device Care</small>
+              <strong>Cleanup due soon</strong>
             </div>
+            <span>3 Devices</span>
+          </div>
+          <div class="status-card alert">
             <div>
-              <small>Build Type</small>
-              <strong>Gaming Ready</strong>
+              <small>Security Check</small>
+              <strong>Scam prevention review</strong>
             </div>
+            <span>Recommended</span>
+          </div>
+          <div class="mini-grid">
+            <div><strong>24–48hr</strong><small>Priority Response</small></div>
+            <div><strong>Remote</strong><small>Quick Support</small></div>
+            <div><strong>Onsite</strong><small>Local Visits</small></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="quick-find section reveal" id="services">
-      <div class="section-heading">
-        <p class="eyebrow">Find your service fast</p>
-        <h2>What do you need help with?</h2>
-        <p>Simple categories, clear pricing, and service details that make sense.</p>
-      </div>
-
-      <div class="service-grid">
-        <article class="service-card featured">
-          <div class="card-icon">🧼</div>
-          <h3>PC Cleaning</h3>
-          <p>Dust removal, fan cleaning, airflow checks, and basic temperature review.</p>
-          <strong>From $20</strong>
-          <a href="#pricing">See cleaning options</a>
-        </article>
-
-        <article class="service-card">
-          <div class="card-icon">🩺</div>
-          <h3>Diagnostics</h3>
-          <p>Overheating, crashes, slow PCs, blue screens, drive health, and performance issues.</p>
-          <strong>From $40</strong>
-          <a href="#pricing">View diagnostics</a>
-        </article>
-
-        <article class="service-card">
-          <div class="card-icon">🎮</div>
-          <h3>Custom Gaming PCs</h3>
-          <p>Budget, mid-range, and premium gaming computers built around your games and goals.</p>
-          <strong>Quote-based</strong>
-          <a href="#custom-pcs">Start a build</a>
-        </article>
-
-        <article class="service-card">
-          <div class="card-icon">⚡</div>
-          <h3>Upgrades</h3>
-          <p>SSD, RAM, GPU, fans, cooling, power supplies, Windows installs, and tune-ups.</p>
-          <strong>From $15 labor</strong>
-          <a href="#pricing">View upgrades</a>
-        </article>
-
-        <article class="service-card">
-          <div class="card-icon">🛡️</div>
-          <h3>Software Cleanup</h3>
-          <p>Startup optimization, malware cleanup, Windows refreshes, and driver cleanup.</p>
-          <strong>From $60</strong>
-          <a href="#pricing">View software services</a>
-        </article>
-
-        <article class="service-card">
-          <div class="card-icon">📶</div>
-          <h3>Home Tech & Networking</h3>
-          <p>Wi‑Fi help, gaming network optimization, smart device setup, and home tech support.</p>
-          <strong>Custom pricing</strong>
-          <a href="#contact">Request help</a>
-        </article>
+    <section class="section section-tight">
+      <div class="container credibility-grid reveal">
+        <div><strong>For Homes</strong><span>Computers, printers, TVs, phones, tablets, Wi‑Fi.</span></div>
+        <div><strong>For Businesses</strong><span>Workstations, networking, backups, office tech.</span></div>
+        <div><strong>For Senior Living</strong><span>Patient resident support plus facility technology help.</span></div>
       </div>
     </section>
 
-    <section class="pricing section reveal" id="pricing">
-      <div class="section-heading">
-        <p class="eyebrow">Transparent starting prices</p>
-        <h2>Pricing that is easy to understand.</h2>
-        <p>Final pricing can vary depending on parts, severity, travel, and scope. You approve work before anything major is done.</p>
-      </div>
-
-      <div class="pricing-tabs" role="tablist" aria-label="Pricing categories">
-        <button class="tab active" data-tab="cleaning">Cleaning</button>
-        <button class="tab" data-tab="diagnostics">Diagnostics</button>
-        <button class="tab" data-tab="upgrades">Upgrades</button>
-        <button class="tab" data-tab="software">Software</button>
-      </div>
-
-      <div class="pricing-panels">
-        <div class="price-panel active" id="cleaning">
-          <article class="price-card">
-            <span class="tag">Entry service</span>
-            <h3>Basic PC Cleaning</h3>
-            <div class="price">$20</div>
-            <ul>
-              <li>Exterior wipe-down</li>
-              <li>Dust blowout</li>
-              <li>Fan and filter cleaning</li>
-              <li>Basic airflow check</li>
-            </ul>
-          </article>
-
-          <article class="price-card premium">
-            <span class="tag">Most popular</span>
-            <h3>Deep Clean + Thermal Check</h3>
-            <div class="price">$60</div>
-            <ul>
-              <li>Detailed internal cleaning</li>
-              <li>GPU and CPU cooler dust removal</li>
-              <li>Cable and airflow review</li>
-              <li>Temperature check before/after</li>
-            </ul>
-          </article>
-
-          <article class="price-card">
-            <span class="tag">Performance refresh</span>
-            <h3>Premium Refresh</h3>
-            <div class="price">$100+</div>
-            <ul>
-              <li>Deep clean included</li>
-              <li>CPU thermal paste replacement</li>
-              <li>Fan curve review</li>
-              <li>Health report and recommendations</li>
-            </ul>
-          </article>
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">What We Do</div>
+          <h2>Clear services. Professional delivery.</h2>
+          <p>BTS is built around practical technology support: fixing problems, improving reliability, and making technology easier to use.</p>
         </div>
-
-        <div class="price-panel" id="diagnostics">
-          <article class="price-card premium">
-            <span class="tag">Core service</span>
-            <h3>Standard Diagnostic</h3>
-            <div class="price">$40</div>
-            <ul>
-              <li>Hardware health check</li>
-              <li>Temperature and performance review</li>
-              <li>Drive health check</li>
-              <li>Clear repair recommendations</li>
-            </ul>
+        <div class="service-grid">
+          <article class="card reveal">
+            <div class="icon">🖥️</div>
+            <h3>Computer Repair & Cleanup</h3>
+            <p>Slow computers, malware cleanup, diagnostics, hardware upgrades, data transfers, tuneups, and setup.</p>
           </article>
-
-          <article class="price-card">
-            <span class="tag">Gaming-focused</span>
-            <h3>Performance Diagnostic</h3>
-            <div class="price">$60+</div>
-            <ul>
-              <li>FPS/performance review</li>
-              <li>Thermal throttling check</li>
-              <li>Driver and startup review</li>
-              <li>Upgrade path recommendation</li>
-            </ul>
+          <article class="card reveal delay-1">
+            <div class="icon">📶</div>
+            <h3>Wi‑Fi & Networking</h3>
+            <p>Router setup, coverage improvements, troubleshooting, network cleanup, small office networking, and secure segmentation.</p>
           </article>
-
-          <article class="price-card">
-            <span class="tag">Problem solving</span>
-            <h3>Crash / Blue Screen Review</h3>
-            <div class="price">$60+</div>
-            <ul>
-              <li>Error review</li>
-              <li>Stability testing</li>
-              <li>RAM and drive checks</li>
-              <li>Repair plan before major work</li>
-            </ul>
+          <article class="card reveal delay-2">
+            <div class="icon">📱</div>
+            <h3>Device Setup</h3>
+            <p>Phones, tablets, printers, smart TVs, streaming devices, email, accounts, password managers, and backups.</p>
           </article>
-        </div>
-
-        <div class="price-panel" id="upgrades">
-          <article class="price-card">
-            <span class="tag">Fast install</span>
-            <h3>RAM Install</h3>
-            <div class="price">$15+</div>
-            <ul>
-              <li>Memory install</li>
-              <li>BIOS recognition check</li>
-              <li>Basic stability check</li>
-            </ul>
+          <article class="card reveal">
+            <div class="icon">🛡️</div>
+            <h3>Scam & Safety Help</h3>
+            <p>Friendly guidance for phishing, suspicious popups, account recovery, safer browsing, and basic security habits.</p>
           </article>
-
-          <article class="price-card premium">
-            <span class="tag">Best value</span>
-            <h3>SSD Install</h3>
-            <div class="price">$25+</div>
-            <ul>
-              <li>Drive install</li>
-              <li>Health verification</li>
-              <li>Windows migration or reinstall quoted separately</li>
-            </ul>
+          <article class="card reveal delay-1">
+            <div class="icon">🏢</div>
+            <h3>Small Business IT</h3>
+            <p>Office workstations, printers, backups, network health, vendor coordination, lifecycle planning, and support retainers.</p>
           </article>
-
-          <article class="price-card">
-            <span class="tag">Gaming upgrade</span>
-            <h3>GPU Install</h3>
-            <div class="price">$30+</div>
-            <ul>
-              <li>Graphics card install</li>
-              <li>Driver cleanup/install</li>
-              <li>Power and fitment check</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="price-panel" id="software">
-          <article class="price-card">
-            <span class="tag">Cleanup</span>
-            <h3>Malware / Virus Cleanup</h3>
-            <div class="price">$60+</div>
-            <ul>
-              <li>Malware scan</li>
-              <li>Startup cleanup</li>
-              <li>Browser cleanup</li>
-              <li>Security recommendations</li>
-            </ul>
-          </article>
-
-          <article class="price-card premium">
-            <span class="tag">Fresh start</span>
-            <h3>Windows Reinstall</h3>
-            <div class="price">$80+</div>
-            <ul>
-              <li>Clean Windows install</li>
-              <li>Core drivers installed</li>
-              <li>Basic updates</li>
-              <li>Data backup quoted separately</li>
-            </ul>
-          </article>
-
-          <article class="price-card">
-            <span class="tag">Protection</span>
-            <h3>Data Backup</h3>
-            <div class="price">$40+</div>
-            <ul>
-              <li>Personal file backup</li>
-              <li>External drive or cloud options</li>
-              <li>Before reinstall or repair</li>
-            </ul>
+          <article class="card reveal delay-2">
+            <div class="icon">🧰</div>
+            <h3>Technology Modernization</h3>
+            <p>Upgrade outdated setups with cleaner wiring, better Wi‑Fi, improved device organization, and simpler workflows.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="custom-pcs section reveal" id="custom-pcs">
-      <div class="build-content">
+    <section class="section alt" id="plans">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">BTS Care Plans</div>
+          <h2>Support plans that feel simple, local, and dependable.</h2>
+          <p>Care Plans create predictable support for homes, families, seniors, and businesses. Pricing below is starter positioning and can be adjusted before launch.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <div class="plan-label">Home</div>
+            <h3>Essential Care</h3>
+            <div class="price">$19<span>/mo</span></div>
+            <p>For light support and peace of mind.</p>
+            <ul>
+              <li>Remote support access</li>
+              <li>Annual device health check</li>
+              <li>Scam and safety guidance</li>
+              <li>Priority scheduling</li>
+              <li>Discounted onsite visits</li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary full">Start Plan</a>
+          </article>
+
+          <article class="price-card featured reveal delay-1">
+            <div class="badge">Most Popular</div>
+            <div class="plan-label">Family / Senior</div>
+            <h3>Premium Tech Care</h3>
+            <div class="price">$49<span>/mo</span></div>
+            <p>For households that want reliable ongoing help.</p>
+            <ul>
+              <li>Support for up to 5 devices</li>
+              <li>Remote troubleshooting</li>
+              <li>Yearly computer cleaning</li>
+              <li>Printer, TV, tablet and Wi‑Fi help</li>
+              <li>10% off project labor</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary full">Choose Premium</a>
+          </article>
+
+          <article class="price-card reveal delay-2">
+            <div class="plan-label">Business</div>
+            <h3>Business Care</h3>
+            <div class="price">Custom</div>
+            <p>For small offices and facilities needing recurring support.</p>
+            <ul>
+              <li>Scheduled onsite support</li>
+              <li>Network and Wi‑Fi health checks</li>
+              <li>Printer and workstation support</li>
+              <li>Backup and device planning</li>
+              <li>Preferred vendor relationship</li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary full">Request Quote</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split" id="senior">
+      <div class="container split-grid">
+        <div class="split-copy reveal">
+          <div class="eyebrow">Senior Community Support</div>
+          <h2>A dedicated technology partner for retirement homes and assisted living communities.</h2>
+          <p>Facilities need patient, trustworthy support for residents and dependable help for staff technology. BTS can offer a facility subscription with optional resident services.</p>
+          <div class="check-list">
+            <span>Resident tech help days</span>
+            <span>Scam prevention workshops</span>
+            <span>Wi‑Fi and printer troubleshooting</span>
+            <span>Smart TV, tablet, and video call setup</span>
+            <span>Staff support and technology assessments</span>
+          </div>
+          <a href="#contact" class="btn btn-primary">Partner With BTS</a>
+        </div>
+        <div class="glass-stack reveal delay-1">
+          <div class="glass-item"><strong>Facility Retainer</strong><span>Predictable monthly support for staff, network, and common technology needs.</span></div>
+          <div class="glass-item"><strong>Resident Support</strong><span>Friendly personal help for computers, phones, tablets, printers, and streaming.</span></div>
+          <div class="glass-item"><strong>Education</strong><span>Simple workshops covering scams, passwords, safe browsing, and account safety.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="business">
+      <div class="container business-panel reveal">
         <div>
-          <p class="eyebrow">Custom gaming computers</p>
-          <h2>Built around your games, budget, and upgrade path.</h2>
-          <p>
-            BTS custom builds focus on smart part selection, clean cable management, strong airflow,
-            quiet operation, and honest performance expectations.
-          </p>
+          <div class="eyebrow">Commercial Technology Upgrades</div>
+          <h2>Modernize outdated business technology without overcomplicating it.</h2>
+          <p>BTS can help small offices, shops, clinics, and facilities clean up unreliable setups and move toward documented, maintainable technology.</p>
+        </div>
+        <div class="business-list">
+          <div><strong>Network cleanup</strong><span>Replace messy wiring and unreliable consumer gear.</span></div>
+          <div><strong>Workstation refresh</strong><span>Set up PCs, user accounts, backups, printers, and software.</span></div>
+          <div><strong>Wi‑Fi improvements</strong><span>Fix dead zones and improve reliability for staff and guests.</span></div>
+          <div><strong>Support relationship</strong><span>Give businesses one reliable local technology contact.</span></div>
+        </div>
+      </div>
+    </section>
 
-          <div class="build-tiers">
-            <div>
-              <strong>Starter Gaming</strong>
-              <span>$700–$1,000 typical budget</span>
-            </div>
-            <div>
-              <strong>1440p Performance</strong>
-              <span>$1,100–$1,900 typical budget</span>
-            </div>
-            <div>
-              <strong>Showcase Builds</strong>
-              <span>$2,000+ enthusiast systems</span>
-            </div>
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">How It Works</div>
+          <h2>Simple from the first call.</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><span>01</span><h3>Tell us what is going on</h3><p>We learn the issue, environment, urgency, and whether remote or onsite help makes sense.</p></div>
+          <div class="step reveal delay-1"><span>02</span><h3>Diagnose clearly</h3><p>You get plain-English findings, options, and upfront next steps before work expands.</p></div>
+          <div class="step reveal delay-2"><span>03</span><h3>Fix and document</h3><p>We resolve the issue, clean up the setup, and leave customers with clear notes.</p></div>
+          <div class="step reveal delay-3"><span>04</span><h3>Prevent repeat problems</h3><p>Care Plans and maintenance help prevent small issues from becoming expensive surprises.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <div class="eyebrow">Book BTS</div>
+          <h2>Ready to make technology easier?</h2>
+          <p>Use this form placeholder for now. In production, connect it to Calendly, TidyCal, Square Appointments, HubSpot, or a custom backend.</p>
+          <div class="contact-cards">
+            <a href="mailto:contact@blackwoodtechservices.com">contact@blackwoodtechservices.com</a>
+            <a href="mailto:sales@blackwoodtechservices.com">sales@blackwoodtechservices.com</a>
+            <span>Bloomington, MN & Twin Cities</span>
           </div>
         </div>
-
-        <form class="quote-card" id="quoteForm">
-          <h3>Quick Build Quote</h3>
-
+        <form class="contact-form reveal delay-1" id="leadForm">
           <label>
-            Your budget
-            <select name="budget">
-              <option>$700–$1,000</option>
-              <option>$1,000–$1,500</option>
-              <option>$1,500–$2,500</option>
-              <option>$2,500+</option>
+            Name
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            Service Type
+            <select name="service" required>
+              <option value="">Select one</option>
+              <option>Computer Repair</option>
+              <option>Home Tech Support</option>
+              <option>Senior Community Partnership</option>
+              <option>Business IT Support</option>
+              <option>Wi‑Fi / Networking</option>
+              <option>Care Plan</option>
             </select>
           </label>
-
           <label>
-            Main use
-            <select name="use">
-              <option>Gaming</option>
-              <option>Gaming + streaming</option>
-              <option>Gaming + school/work</option>
-              <option>Editing / creative work</option>
-            </select>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell us what you need help with"></textarea>
           </label>
-
-          <label>
-            Target
-            <select name="target">
-              <option>1080p high FPS</option>
-              <option>1440p balanced</option>
-              <option>4K / ultra settings</option>
-              <option>Not sure yet</option>
-            </select>
-          </label>
-
-          <label>
-            Style
-            <select name="style">
-              <option>Clean black build</option>
-              <option>RGB gaming build</option>
-              <option>White showcase build</option>
-              <option>No preference</option>
-            </select>
-          </label>
-
-          <button class="btn btn-primary" type="submit">Generate Quote Summary</button>
-          <p class="form-note" id="quoteOutput">Choose your options and generate a quick summary.</p>
+          <button class="btn btn-primary full" type="submit">Prepare Email Request</button>
+          <p class="form-note" id="formNote">This demo opens an email draft so the static site works immediately.</p>
         </form>
-      </div>
-    </section>
-
-    <section class="process section reveal" id="process">
-      <div class="section-heading">
-        <p class="eyebrow">Simple process</p>
-        <h2>No confusing repair-shop experience.</h2>
-      </div>
-
-      <div class="steps">
-        <article>
-          <span>01</span>
-          <h3>Choose a service</h3>
-          <p>Pick cleaning, diagnostics, upgrades, custom builds, or home tech help.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Approve the plan</h3>
-          <p>You get clear recommendations before major repair work or parts purchases.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Get proof</h3>
-          <p>Photos, temperatures, notes, and simple explanations of what was done.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="contact section reveal" id="contact">
-      <div class="contact-card">
-        <div>
-          <p class="eyebrow">Ready to book?</p>
-          <h2>Start with a cleaning, diagnostic, or custom PC quote.</h2>
-          <p>
-            Replace the placeholders below with your real booking link, phone number, and business email
-            before publishing.
-          </p>
-        </div>
-
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:contact@blackwoodtechservices.com?subject=BTS Service Request">Email BTS</a>
-          <a class="btn btn-secondary" href="tel:+17633531960">Call / Text</a>
-        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div>
-      <strong>Blackwood Tech Services</strong>
-      <p>PC cleaning • Diagnostics • Custom gaming computers • Upgrades • Home tech</p>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark">BTS</span>
+          <span class="brand-text"><strong>Blackwood</strong><small>Tech Services</small></span>
+        </a>
+        <p>Professional local technology support for homes, seniors, and small businesses.</p>
+      </div>
+      <div>
+        <strong>Services</strong>
+        <a href="#services">Computer Repair</a>
+        <a href="#senior">Senior Support</a>
+        <a href="#business">Business IT</a>
+      </div>
+      <div>
+        <strong>Company</strong>
+        <a href="#plans">Care Plans</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
-    <a href="#top">Back to top</a>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Blackwood Tech Services. All rights reserved.</span>
+      <span>Built for BTS Website v1.0</span>
+    </div>
   </footer>
 
   <script src="script.js"></script>
